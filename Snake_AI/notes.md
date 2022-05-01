@@ -65,3 +65,8 @@ food up, food down
     - Input layer(state)
     - Hidden layer
     - Output layer(3 outputs to predict the action)
+
+
+##### Resources
+- [Bellman Equations and Dyanmic Programming](https://login.cs.utexas.edu/sites/default/files/legacy_files/research/documents/6%20Bellman%20Eqs%20and%20DP.pdf )
+- [Bellman Equation](https://www.geeksforgeeks.org/bellman-equation/ )
