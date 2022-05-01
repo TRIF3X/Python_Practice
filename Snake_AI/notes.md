@@ -5,9 +5,9 @@
 ## Deep Q learning
 - This approach extends reinforcement learning by using a deep neural network to predict the actions.
 
-Downfalls: Only practical for very small environments and quickly loses its feasibility when the number of states and actions in the environment increases
+- Downfalls: Only practical for very small environments and quickly loses its feasibility when the number of states and actions in the environment increases
 
-Q Value = Quality of action
+- Q Value = Quality of action
 
 0. Init Q Value(= init model)
 1. Choose action (model.predict(state), or random move)
@@ -44,11 +44,11 @@ Q Value = Quality of action
         -> action
 
 ##### Action
-[1, 0, 0] -> Straight
-[0, 1, 0] -> Right turn
-[0, 0, 1] -> Left turn
+- [1, 0, 0] -> Straight
+- [0, 1, 0] -> Right turn
+- [0, 0, 1] -> Left turn
 
-Using 3 numbers for our action we can never do a 180 degree turn(no backwards)
+- Using 3 numbers for our action we can never do a 180 degree turn(no backwards)
 
 ##### States (11 values)
 [danger straight, danger right, danger left,
@@ -61,7 +61,7 @@ food up, food down
 ]
 
 ##### Model
-- Feed fordward nueral net
+- Feed forward nueral net
     - Input layer(state)
     - Hidden layer
     - Output layer(3 outputs to predict the action)
