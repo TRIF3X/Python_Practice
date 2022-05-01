@@ -15,7 +15,7 @@
 3. Measure reward
 4. Update Q value (+ train model) [then repeat at step 1]
 
-![Bellman Equation](\resources\bellmanEquation.png "bellman equation")
+![Bellman Equation](.\resources\bellmanEquation.png "bellman equation")
 
 ## Components
 1. Agent(our computer player)
