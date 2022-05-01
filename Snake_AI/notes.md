@@ -7,10 +7,21 @@
 
 Downfalls: Only practical for very small environments and quickly loses its feasibility when the number of states and actions in the environment increases
 
+Q Value = Quality of action
+
+0. Init Q Value(= init model)
+1. Choose action (model.predict(state), or random move)
+2. Perform action
+3. Measure reward
+4. Update Q value (+ train model) [then repeat at step 1]
+
 ## Components
 1. Agent(our computer player)
 2. Environment(the game itself)
 3. Reward(give agent an award to inform it on how well it is doing)
+    - eat food: +10
+    - game over: -10
+    - else: 0
 
 ### Steps to follow
 1. Agent    
@@ -31,3 +42,26 @@ Downfalls: Only practical for very small environments and quickly loses its feas
     Linear_QNet(DQN)
     - model.predict(state)
         -> action
+
+##### Action
+[1, 0, 0] -> Straight
+[0, 1, 0] -> Right turn
+[0, 0, 1] -> Left turn
+
+Using 3 numbers for our action we can never do a 180 degree turn(no backwards)
+
+##### States (11 values)
+[danger straight, danger right, danger left,
+
+direction left, direction right,
+direction up, direction down,
+
+food left, food right,
+food up, food down
+]
+
+##### Model
+- Feed fordward nueral net
+    - Input layer(state)
+    - Hidden layer
+    - Output layer(3 outputs to predict the action)
